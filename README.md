@@ -65,11 +65,6 @@ Screenshots
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/8ef1a9f5-ed76-4359-90f4-362045f3a535" />
 
 Future Enhancements
-
-Add support for multiple ML algorithms (Random Forest, XGBoost, etc.)
-
-Integrate a database for storing past predictions
-
 Deploy on Heroku, Vercel, or AWS
 
 Add visualizations of prediction confidence
