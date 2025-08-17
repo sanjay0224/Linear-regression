@@ -1,49 +1,87 @@
-🏠 Linear Regression House Price Prediction
-📌 Project Overview
-This project is a Machine Learning web application built using Flask for the backend and HTML/CSS for the frontend.
-It predicts house prices based on input features like the number of rooms, area, location, and other parameters using a Linear Regression model.
+Linear Regression House Price Prediction
+Project Overview
 
-The model is trained on a sample housing dataset and integrated into a Flask web app, allowing users to enter details in a form and get the predicted price instantly.
+This is a Machine Learning Web Application built using Flask (backend) and HTML/CSS (frontend).
+It predicts house prices based on input features such as:
 
-Project Structure
-house_price_prediction/
-│
-├── static/
-│   ├── style.css         # CSS styling for the frontend
-│
-├── templates/
-│   ├── index.html        # Input form page
-│   ├── result.html       # Output prediction page
-│
-├── model/
-│   ├── house_price_model.pkl  # Trained Linear Regression model
-│
-├── app.py                # Flask application
-├── train_model.py        # Script to train and save the model
-├── requirements.txt      # Python dependencies
-├── README.md             # Project documentation
+Number of rooms
 
+Area (sq. ft.)
 
-⚙️ Installation & Setup
+Location
 
-1️⃣ Clone the Repository
+Other parameters
+
+The prediction is powered by a Linear Regression model trained on a sample housing dataset.
+Users can enter details in a form, and the app instantly returns the predicted house price.
+
+Installation & Setup
+1. Clone the Repository
 git clone https://github.com/yourusername/house_price_prediction.git
 cd house_price_prediction
 
-2️⃣ Create a Virtual Environment
+2. Create a Virtual Environment
 python -m venv venv
+
+
 Activate the environment:
 
 Windows:
+
 venv\Scripts\activate
 
-3️⃣ Install Dependencies
+
+Linux/Mac:
+
+source venv/bin/activate
+
+3. Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Train the Model
+4. Train the Model
 python train_model.py
 
-5️⃣ Run the Flask App
 
+This will generate house_price_model.pkl inside the model/ folder.
+
+5. Run the Flask App
 python app.py
-The app will run on http://127.0.0.1:5000/
+
+
+The app will be available at: http://127.0.0.1:5000/
+
+Features
+
+User-friendly web interface
+
+Instant predictions using Linear Regression
+
+Modular structure for easy updates
+
+Extendable with other ML models
+
+Screenshots
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/8ef1a9f5-ed76-4359-90f4-362045f3a535" />
+
+Future Enhancements
+
+Add support for multiple ML algorithms (Random Forest, XGBoost, etc.)
+
+Integrate a database for storing past predictions
+
+Deploy on Heroku, Vercel, or AWS
+
+Add visualizations of prediction confidence
+
+Tech Stack
+
+Python 3.x
+
+Flask (Web Framework)
+
+Scikit-learn (Machine Learning)
+
+Pandas, NumPy (Data Handling)
+
+HTML, CSS (Frontend)
